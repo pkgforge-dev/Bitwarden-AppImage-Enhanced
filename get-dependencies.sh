@@ -40,9 +40,9 @@ mkdir -p ./AppDir/bin && (
 	rm -f ./bitwarden
 	ln -s ./bitwarden-app ./bitwarden
 	
-	cp -v ./resources/com.bitwarden.desktop.desktop ./
-	cp -v ./resources/icons/256x256.png ./
-	cp -v ./resources/icons/256x256.png ./.DirIcon
+	cp -v ./resources/com.bitwarden.desktop.desktop ../
+	cp -v ./resources/icons/256x256.png ../
+	cp -v ./resources/icons/256x256.png ../.DirIcon
 )
 
 echo "$TARBALL_LINK" | awk -F'/' '{print $(NF-1)}' | awk -F'-' '{print $NF}' > ~/version
