@@ -15,6 +15,8 @@
 | :---: | :---: |
 | [Click here](https://github.com/pkgforge-dev/Bitwarden-AppImage-Enhanced/releases/latest) | [Click here](https://github.com/bitwarden/clients) |
 
+Improved AppImage **independent of the host libc** which makes able to work on very very old distros as well as musl-libc distros like alpine linux.
+
 </div>
 
 ---
