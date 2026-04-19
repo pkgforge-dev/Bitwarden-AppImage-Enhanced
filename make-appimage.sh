@@ -7,7 +7,8 @@ export ARCH
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook:fix-namespaces.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export OPTIMIZE_LAUNCH=1
+# Using this option causes the CI to hang on aarch64
+# export OPTIMIZE_LAUNCH=1
 
 # Deploy dependencies
 quick-sharun ./AppDir/bin/*
